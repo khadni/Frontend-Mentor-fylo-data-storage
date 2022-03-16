@@ -16,24 +16,49 @@
   <body>
     <div class="fylo-content">
       <div class="fylo-content__icons">
-        <div class="fylo-content__icons__top">FYLO</div>
+        <div class="fylo-content__icons__top">
+          <img src="./images/logo.svg" />
+        </div>
         <div class="fylo-content__icons__btm">
-          <img src="./images/icon-document.svg" alt="document-icon" />
-          <img src="./images/icon-folder.svg" alt="folder-icon" />
-          <img src="./images/icon-upload.svg" alt="upload-icon" />
+          <div class="fylo-content__icons__btm__img">
+            <img src="./images/icon-document.svg" alt="document-icon" />
+          </div>
+          <div class="fylo-content__icons__btm__img">
+            <img src="./images/icon-folder.svg" alt="folder-icon" />
+          </div>
+          <div class="fylo-content__icons__btm__img">
+            <img src="./images/icon-upload.svg" alt="upload-icon" />
+          </div>
         </div>
       </div>
       <div class="fylo-content__data">
-        You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+        <div class="fylo-content__data__1">
+          You’ve used <strong>815 GB</strong> of your storage
+        </div>
+        <div class="fylo-content__data__2">
+          <input
+            type="range"
+            id="data"
+            name="data"
+            min="0"
+            max="100"
+            value="81.5"
+            step="10"
+          />
+        </div>
+        <div class="fylo-content__data__3">
+          <div class="fylo-content__data__3__1">0 GB</div>
+          <div class="fylo-content__data__3__2">1000 GB</div>
+        </div>
       </div>
     </div>
 
     <div class="footer">
-      <div class="attribution">
+      <div class="footer__attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Karim Hadni</a>.
+          ><strong>Frontend Mentor</strong></a
+        >. Coded by <strong>Karim Hadni</strong>.
       </div>
     </div>
   </body>

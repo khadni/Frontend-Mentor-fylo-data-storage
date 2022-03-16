@@ -31,17 +31,61 @@ body {
     flex-direction: column;
     row-gap: 50px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 50% 50% 87% 13% / 18% 74% 26% 82%;
     border-top-right-radius: 50%; }
     .fylo-content__icons__btm {
       display: flex;
       flex-direction: row;
-      column-gap: 20px; }
-      .fylo-content__icons__btm img {
+      column-gap: 18px;
+      align-items: center; }
+      .fylo-content__icons__btm__img {
         padding: 20px;
-        background-color: #0c122c; }
+        background-color: #0c122c;
+        border-radius: 10px;
+        height: 55px;
+        width: 55px;
+        position: relative; }
+        .fylo-content__icons__btm__img img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%); }
   .fylo-content__data {
-    background-color: #1d2c67; }
+    background-color: #1d2c67;
+    color: white;
+    margin: 50px 0;
+    padding: 45px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; }
+    .fylo-content__data__1 {
+      margin-bottom: 15px; }
+    .fylo-content__data__2 {
+      margin-bottom: 10px; }
+      .fylo-content__data__2 input[type="range"] {
+        -webkit-appearance: none;
+        padding: 0;
+        outline: none;
+        width: 100%;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #ffc580 0%, #ff76ef 100%, #fcb045 100%); }
+        .fylo-content__data__2 input[type="range"]:focus {
+          outline: none; }
+        .fylo-content__data__2 input[type="range"]::-webkit-slider-runnable-track {
+          border-radius: 15px;
+          height: 16px; }
+        .fylo-content__data__2 input[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          margin-top: 1px;
+          background-color: white;
+          border-radius: 0.5rem;
+          height: 0.8rem;
+          width: 0.8rem; }
+    .fylo-content__data__3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
 
 .footer {
   color: white;
@@ -55,11 +99,12 @@ body {
     font-size: 12px;
     text-align: center;
     color: white;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 20px; }
   .footer__attribution a {
     color: white;
     font-weight: 700; }
     .footer__attribution a:hover {
-      color: #050517; }
+      color: cyan; }
 
 /*# sourceMappingURL=style.css.map */

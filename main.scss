@@ -42,7 +42,7 @@ body {
     flex-direction: column;
     row-gap: 50px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 50% 50% 87% 13% / 18% 74% 26% 82%;
     border-top-right-radius: 50%;
 
     &__top {
@@ -51,17 +51,81 @@ body {
     &__btm {
       display: flex;
       flex-direction: row;
-      column-gap: 20px;
-
-      & img {
+      column-gap: 18px;
+      align-items: center;
+      &__img {
         padding: 20px;
         background-color: $veryDarkblue;
+        border-radius: 10px;
+        height: 55px;
+        width: 55px;
+        position: relative;
+
+        & img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
   }
 
   &__data {
     background-color: $darkBlue;
+    color: white;
+    margin: 50px 0;
+    padding: 45px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+    &__1 {
+      margin-bottom: 15px;
+    }
+
+    &__2 {
+      margin-bottom: 10px;
+      & input[type="range"] {
+        -webkit-appearance: none;
+        padding: 0;
+        outline: none;
+        width: 100%;
+        // background-color: $veryDarkblue;
+        border-radius: 10px;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 197, 128, 1) 0%,
+          rgba(255, 118, 239, 1) 100%,
+          rgba(252, 176, 69, 1) 100%
+        );
+
+        &:focus {
+          outline: none;
+        }
+
+        &::-webkit-slider-runnable-track {
+          border-radius: 15px;
+          height: 16px;
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          margin-top: 1px;
+          background-color: white;
+          border-radius: 0.5rem;
+          height: 0.8rem;
+          width: 0.8rem;
+        }
+      }
+    }
+
+    &__3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -79,14 +143,14 @@ body {
     text-align: center;
     color: white;
     font-weight: 700;
+    padding: 20px;
   }
 
   &__attribution a {
     color: white;
     font-weight: 700;
-
     &:hover {
-      color: rgb(5, 5, 23);
+      color: cyan;
     }
   }
 }
