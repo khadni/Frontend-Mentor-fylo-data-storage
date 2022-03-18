@@ -153,7 +153,8 @@ body {
     background-color: white;
     color: #0c122c;
     text-transform: uppercase;
-    border-radius: 15px; }
+    border-radius: 15px;
+    clip-path: unset; }
     .fylo-content__data__after span {
       font-weight: 800;
       font-size: 2.5rem; } }
@@ -167,7 +168,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    column-gap: 30px; } }
+    column-gap: 30px;
+    clip-path: unset; } }
 @media screen and (max-width: 600px) {
   body {
     background-size: cover;
@@ -183,7 +185,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    column-gap: 30px; }
+    column-gap: 30px;
+    clip-path: unset; }
 
   .fylo-content__icons {
     width: 500px;
