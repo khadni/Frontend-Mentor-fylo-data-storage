@@ -86,6 +86,20 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
+    .fylo-content__data__after {
+      position: absolute;
+      top: 0%;
+      right: 5%;
+      padding: 10px 26px;
+      padding-bottom: 45px;
+      background-color: white;
+      color: #0c122c;
+      text-transform: uppercase;
+      border-radius: 5px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 90% 75%, 0% 75%); }
+      .fylo-content__data__after span {
+        font-weight: 800;
+        font-size: 2.5rem; }
 
 .footer {
   color: white;
@@ -126,7 +140,23 @@ body {
 
   .fylo-content__icons {
     width: 400px;
-    align-self: center; } }
+    align-self: center; }
+
+  .fylo-content__data__after {
+    top: unset;
+    right: unset;
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 26px;
+    background-color: white;
+    color: #0c122c;
+    text-transform: uppercase;
+    border-radius: 15px; }
+    .fylo-content__data__after span {
+      font-weight: 800;
+      font-size: 2.5rem; } }
 @media screen and (max-width: 800px) {
   .fylo-content {
     position: absolute;

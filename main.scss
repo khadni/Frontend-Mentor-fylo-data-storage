@@ -126,6 +126,25 @@ body {
       flex-direction: row;
       justify-content: space-between;
     }
+
+    &__after {
+      position: absolute;
+      top: 0%;
+      right: 5%;
+      padding: 10px 26px;
+      padding-bottom: 45px;
+      background-color: white;
+      color: $veryDarkblue;
+      text-transform: uppercase;
+
+      border-radius: 5px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 90% 75%, 0% 75%);
+
+      & span {
+        font-weight: 800;
+        font-size: 2.5rem;
+      }
+    }
   }
 }
 
@@ -177,6 +196,25 @@ body {
   .fylo-content__icons {
     width: 400px;
     align-self: center;
+  }
+
+  .fylo-content__data__after {
+    top: unset;
+    right: unset;
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 26px;
+    background-color: white;
+    color: $veryDarkblue;
+    text-transform: uppercase;
+    border-radius: 15px;
+
+    & span {
+      font-weight: 800;
+      font-size: 2.5rem;
+    }
   }
 }
 
